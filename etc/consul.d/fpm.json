@@ -1,0 +1,10 @@
+{
+  "service": {
+    "name": "php-fpm",
+    "port": 8888,
+    "check": {
+      "script": "nmap 127.0.0.1 -PN -p 8888 | grep open",
+      "interval": "5s"
+    }
+  }
+}
